@@ -15,7 +15,8 @@ const app = express();
 dotenv.config();
 
 // Apply CORS middleware
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://njs-fiverr-like.vercel.app", credentials: true }));
+// app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
 app.use(express.json());
 app.use(cookieParser());
